@@ -10,7 +10,7 @@ const Navbar = () => {
         setNav(!nav)
     }
     return (
-        <div>
+        <div className='px-0 lg:px-10 py-3'>
             <div className='bg-transparent text-gray-400 h-[50px] md:h-[75px] flex justify-between items-center px-5 lg:px-20'>
                 <img className="h-8 w-44" src={headerLogo} alt="webLogo" />
                 <ul className='hidden lg:text-lg text-[#fff9] lg:flex lg:justify-evenly lg:items-center lg:px-5 w-full relative gap-2'>
@@ -28,7 +28,7 @@ const Navbar = () => {
                         <button className='text-xl cursor-pointer hover:text-white'>Login</button>
                     </li>
                     <li>
-                        <button className='rounded-[8px] border border-[#2D9F89] px-[24px] py-[12px] text-[#2D9F89] text-xl'>sginup  </button>
+                        <button className='rounded-[8px] border border-[#2D9F89] px-[24px] py-[12px] text-[#2D9F89] text-xl'>Signup  </button>
                     </li>
                 </ul>
                 <div className='md:flex md:items-center md:gap-6'>
@@ -55,14 +55,14 @@ const Navbar = () => {
                                 <button className='text-xl cursor-pointer hover:text-white'>Login</button>
                             </li>
                             <li>
-                                <button className='rounded-[8px] border border-[#2D9F89] px-[24px] py-[12px] text-[#2D9F89] text-xl'>sginup  </button>
+                                <button className='rounded-[8px] border border-[#2D9F89] px-[24px] py-[12px] text-[#2D9F89] text-xl'>signup  </button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             {IsOpen &&
-                <ul className='bg-[#19233A] p-2 w-64 h-auto gap-6 text-white flex flex-col justify-between text-xl py-4 absolute left-10 top-44'>
+                <ul className='bg-[#19233A] p-2 w-64 h-auto gap-6 text-white flex flex-col justify-between text-xl py-4 absolute left-10 top-44 lg:left-1/4 lg:top-16'>
                     <li>Youtube Transilation</li>
                     <li>Youtube Watch</li>
                     <li>A.I Research Assistant</li>
