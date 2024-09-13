@@ -36,7 +36,10 @@ const Navbar = () => {
                     <div onClick={handleNav} className='block px-5 lg:hidden'>
                         {nav ? <AiOutlineClose size={25} color='red' /> : <AiOutlineMenu size={25} color='white' />}
                     </div>
-                    <div className={nav ? 'fixed bg-black h-full w-[60%] top-0 left-0 ease-in-out transition-all' : 'fixed left-[-100%]'}>
+
+                    {/* Responsive */}
+
+                    <div className={nav ? 'fixed bg-black h-full w-[50%] top-0 left-0 ease-in-out transition-all' : 'fixed left-[-100%]'}>
                         <div className='p-5'>
                             <img className="h-8 w-44" src={headerLogo} alt="webLogo" />
                         </div>
