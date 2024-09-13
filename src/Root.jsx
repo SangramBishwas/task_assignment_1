@@ -1,4 +1,5 @@
 import Banner from "./Components/Banner";
+import Footer from "./Components/Footer";
 import MonaAI from "./Components/MonaAI";
 import Uniquely from "./Components/Uniquely";
 import YtTranslation from "./Components/YtTranslation";
@@ -13,6 +14,7 @@ const Root = () => {
             <MonaAI />
             <YtTranslation />
             <Uniquely />
+            <Footer />
         </div>
     );
 };
