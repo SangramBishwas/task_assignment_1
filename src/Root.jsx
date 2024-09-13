@@ -1,5 +1,6 @@
 import Banner from "./Components/Banner";
 import MonaAI from "./Components/MonaAI";
+import YtTranslation from "./Components/YtTranslation";
 import Nav from "./Nav";
 const Root = () => {
     return (
@@ -7,6 +8,7 @@ const Root = () => {
             <Nav />
             <Banner />
             <MonaAI />
+            <YtTranslation />
         </div>
     );
 };
