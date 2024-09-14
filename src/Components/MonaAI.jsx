@@ -1,7 +1,7 @@
 import Button from "../Shared/Button";
 import Heading from "../Shared/Heading";
 import Paragraph from "../Shared/Paragraph";
-
+import chatRoom from '../../public/chatroom.png';
 const MonaAI = () => {
     return (
         <div className="px-5 md:px-10 lg:px-24 py-12">
@@ -30,7 +30,7 @@ const MonaAI = () => {
                     </div>
 
                 </div>
-                <img className="w-full" src="../../public/chatroom.png" alt="chatroom" />
+                <img className="w-full" src={chatRoom} width={611} height={509} alt="chatroom" />
             </div>
         </div>
     );

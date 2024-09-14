@@ -1,7 +1,8 @@
 import Button from "../Shared/Button";
 import Heading from "../Shared/Heading";
 import Paragraph from "../Shared/Paragraph";
-
+import youtube_left from "../../public/youtube-service-left.png";
+import youtube_right from "../../public/youtube-service-right.png";
 const YtTranslation = () => {
     return (
         <div className="px-5 md:px-10 lg:px-24 py-12">
@@ -14,7 +15,7 @@ const YtTranslation = () => {
                         <Button text={'Try Now'}></Button>
                     </div>
                 </div>
-                <img className="w-full lg:w-[512px] lg:h-[502px]" src="../../public/youtube-service-right.png" width={512} height={502} alt="youtube-services" />
+                <img className="w-full lg:w-[512px] lg:h-[502px]" src={youtube_right} width={512} height={502} alt="youtube-services" />
             </div>
             <div className="flex flex-col lg:flex-row-reverse items-center lg:gap-24 py-10">
                 <div>
@@ -24,7 +25,7 @@ const YtTranslation = () => {
                         <Button text={'Try Now'}></Button>
                     </div>
                 </div>
-                <img className="w-full lg:w-[512px] lg:h-[502px]" src="../../public/youtube-service-left.png" width={512} height={502} alt="youtube-services" />
+                <img className="w-full lg:w-[512px] lg:h-[502px]" src={youtube_left} width={512} height={502} alt="youtube-services" />
             </div>
         </div>
     );

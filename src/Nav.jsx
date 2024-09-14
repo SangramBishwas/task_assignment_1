@@ -10,8 +10,8 @@ const Navbar = () => {
         setNav(!nav)
     }
     return (
-        <div className='px-0 lg:px-10 py-3'>
-            <div className='bg-transparent text-gray-400 h-[50px] md:h-[75px] flex justify-between items-center px-5 lg:px-20'>
+        <div className='px-0 lg:px-10 relative'>
+            <div className='text-gray-400 h-[50px] md:h-[75px] flex justify-between items-center px-5 lg:px-20 w-full fixed lg:backdrop-blur-lg py-5'>
                 <img className="h-8 w-44" src={headerLogo} alt="webLogo" />
                 <ul className='hidden lg:text-lg text-[#fff9] lg:flex lg:justify-evenly lg:items-center lg:px-5 w-full relative gap-2'>
                     <li className='font-bold text-white primary-color'><a href="#">Home</a></li>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </div>
             </div>
             {IsOpen &&
-                <ul className='bg-[#19233A] p-2 w-64 h-auto gap-6 text-white flex flex-col justify-between text-xl py-4 absolute left-10 top-44 lg:left-1/4 lg:top-16'>
+                <ul className='bg-[#19233A] p-2 w-64 h-auto gap-6 text-white flex flex-col justify-between text-xl py-4 absolute left-10 top-44 lg:left-1/4 lg:top-20'>
                     <li>Youtube Transilation</li>
                     <li>Youtube Watch</li>
                     <li>A.I Research Assistant</li>
